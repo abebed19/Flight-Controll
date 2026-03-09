@@ -15,13 +15,17 @@ public class Test {
     public static void main(String... args){
         
         Scanner sc = new Scanner(System.in);
-        try{
-            int numberEx = Integer.parseInt(sc.nextLine());
-        }catch(NumberFormatException e){
-            System.out.println(e.getMessage());
+        while (true) {
+        System.out.print("Give a number: ");
+
+        try {
+            int readNumber = Integer.parseInt(sc.nextLine());
+            System.out.println(readNumber);
+        } catch (Exception e) {
+            System.out.println("User input was not a number.");
         }
-        
-        
+    }
+   
     }
     
 }
