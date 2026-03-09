@@ -13,5 +13,7 @@ public class Main {
         TextUI  userInterface = new TextUI(controller,sc);
         userInterface.start();
         // Write the main program here. It is useful to create some classes of your own.
+        //Here is a way to practice for number format exception and deeling with exception
+        int numbers = Integer.parseInt(sc.nextLine());
     }
 }
